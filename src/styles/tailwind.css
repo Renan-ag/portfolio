@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-main-white: #f9f5ec;
+  --color-main-white-dark: #dad3c3;
+  --color-main-light: #cbaa5d;
+  --color-main: #c1993d;
+  --color-main-dark: #604c1e;
+  --color-main-darker: #20190a;
+  --color-highlight: #b74d14;
+}
+
+@layer base {
+  body {
+    font-family: "Sora", sans-serif;
+    @apply bg-main-white w-svw text-main-darker;
+  }
+}
+
+@layer utilities {
+}
