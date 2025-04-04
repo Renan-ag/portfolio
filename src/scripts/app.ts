@@ -1,3 +1,4 @@
+import "./animations/animations.ts";
 import i18next from "./i18n.ts";
 
 document.addEventListener("DOMContentLoaded", () => {

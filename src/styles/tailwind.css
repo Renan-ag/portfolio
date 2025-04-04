@@ -18,4 +18,12 @@
 }
 
 @layer utilities {
+  .accordion {
+    transition: max-height 0.35s ease;
+    @apply max-h-0;
+  }
+
+  .accordion.active {
+    @apply max-h-56;
+  }
 }

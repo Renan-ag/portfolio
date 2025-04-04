@@ -16,25 +16,35 @@
 
   <body>
     <nav
-      class="inline-flex justify-between bg-[#f9f5eccc] border rounded-4xl border-main-white-dark px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[240px]"
+      class="inline-block bg-[#f9f5ecc0] border rounded-4xl border-main-white-dark px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[240px] backdrop-blur-sm"
     >
-      <span class="flex text-sm font-semibold items-center gap-2">
-        <span><img width="24px" src="/svg/sun.svg" alt="" /></span>
-        Renan Gouveia
-      </span>
+      <div class="flex justify-between">
+        <span class="flex text-sm font-semibold items-center gap-2">
+          <span><img width="24px" src="/svg/sun.svg" alt="" /></span>
+          Renan Gouveia
+        </span>
 
-      <button class="flex items-center gap-1" title="Menu mobile toggle">
-        <div class="w-1.5 h-1.5 rounded-4xl"></div>
-        <div class="w-1.5 h-1.5 rounded-4xl"></div>
-        <div class="w-1.5 h-1.5 rounded-4xl"></div>
-      </button>
+        <button
+          data-target="bx"
+          class="flex items-center gap-1"
+          title="Menu mobile toggle"
+        >
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+        </button>
+      </div>
 
-      <div class="hidden">
-        <ul>
+      <div data-target="menuMobile" class="overflow-hidden accordion">
+        <ul class="flex flex-col gap-4 pt-4">
           <li>
-            <a href="#About">About</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Projects">Skills</a>
+            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#About">About</a>
+          </li>
+          <li>
+            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#Projects">Projects</a>
+          </li>
+          <li>
+            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#Projects">Skills</a>
           </li>
         </ul>
       </div>
