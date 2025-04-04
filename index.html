@@ -15,9 +15,7 @@
   </head>
 
   <body>
-    <nav
-      class="inline-block bg-[#f9f5ecc0] border rounded-4xl border-main-white-dark px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[240px] backdrop-blur-sm"
-    >
+    <nav class="navbar">
       <div class="flex justify-between">
         <span class="flex text-sm font-semibold items-center gap-2">
           <span><img width="24px" src="/svg/sun.svg" alt="" /></span>
@@ -38,31 +36,45 @@
       <div data-target="menuMobile" class="overflow-hidden accordion">
         <ul class="flex flex-col gap-4 pt-4">
           <li>
-            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#About">About</a>
+            <a
+              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
+              href="#About"
+              >About</a
+            >
           </li>
           <li>
-            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#Projects">Projects</a>
+            <a
+              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
+              href="#Projects"
+              >Projects</a
+            >
           </li>
           <li>
-            <a class="p-2 text-lg font-semibold transition-colors hover:opacity-70" href="#Projects">Skills</a>
+            <a
+              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
+              href="#Projects"
+              >Skills</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
-    <main class="container mt-32">
-      <div>
-        <h1>Hello World, I'm Renan</h1>
-        <span>
+    <main class="container mt-28">
+      <div class="flex items-center text-center justify-center gap-2">
+        <h1 class="text-2xl font-semibold">Hello World, I'm Renan</h1>
+        <span class="hidden">
           <img width="32px" src="/svg/sun.svg" alt="" />
         </span>
       </div>
 
-      <div>
+      <div class="p-2 mt-3">
         <img src="/img/main-image.png" alt="Imagem de perfil" />
       </div>
-      <h2>Occupation / <strong>Front-End Developer</strong></h2>
-      <p>
+
+      <h2 class="text-center mt-2">Occupation / <strong class="text-highlight">Front-End Developer</strong></h2>
+      
+      <p class="text-sm text-justify px-4 mt-2 font-ubuntu">
         Lörem ipsum decins Christian Jonasson krons. Trenaren visöska. Fer begt
         benera. Josk tetratäsam reakigisk plus nett. Deciren eräsere. Multijirat
         synat en rev i plafyling. Decilos kad men könskonträr i oröbel, spek.
@@ -72,6 +84,7 @@
         och desilig nutede. Biopytt mikrobel såsom primaaktiv.
       </p>
     </main>
+    
     <section>
       <h2>Projects</h2>
 
