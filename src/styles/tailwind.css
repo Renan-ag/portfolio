@@ -1,9 +1,15 @@
-@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
 
 @theme {
   --color-main-white: #f9f5ec;
-  --color-main-white-dark: #dad3c3;
+  --color-main-white-dark: rgb(236 229 212);
+  --color-main-white-darker: #dad3c3;
   --color-main-light: #cbaa5d;
+  --color-main-gray: #605a4d;
   --color-main: #c1993d;
   --color-main-dark: #604c1e;
   --color-main-darker: #20190a;
@@ -13,7 +19,7 @@
 @layer base {
   body {
     font-family: "Sora", sans-serif;
-    @apply bg-main-white w-svw text-main-darker;
+    @apply bg-main-white w-full text-main-darker;
   }
 }
 
@@ -25,5 +31,39 @@
 
   .accordion.active {
     @apply max-h-56;
+  }
+
+  .font-ubuntu {
+    font-family: "Ubuntu", sans-serif;
+  }
+}
+
+@layer components {
+  .navbar {
+    @apply inline-block bg-[#f9f5ecc0] border rounded-4xl border-main-white-darker px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[240px] md:w-[436px] backdrop-blur-sm z-10;
+  }
+
+  .section-container {
+    @apply mt-14 container px-3 md:px-6 lg:px-12 md:mt-24;
+  }
+
+  .section-margin {
+    @apply mt-14 md:mt-24;
+  }
+
+  .section-title {
+    @apply text-xl font-medium text-center mb-4 md:mb-6 md:text-left md:text-2xl;
+  }
+
+  .text-link {
+    @apply text-main-white hover:opacity-80 transition-opacity block;
+  }
+
+  .skill-icon {
+    @apply max-w-[120px] mx-auto w-full px-4;
+  }
+
+  .footer-link {
+    @apply inline-block text-center text-main-white border border-main-white rounded-2xl px-4 py-2 sm:w-[425px] max-w-[425px] mx-auto;
   }
 }

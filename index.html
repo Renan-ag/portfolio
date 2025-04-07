@@ -16,21 +16,51 @@
 
   <body>
     <nav class="navbar">
-      <div class="flex justify-between">
-        <span class="flex text-sm font-semibold items-center gap-2">
+      <div class="flex justify-between items-center gap-10">
+        <span class="flex items-center gap-2 text-sm text-nowrap font-semibold">
           <span><img width="24px" src="/svg/sun.svg" alt="" /></span>
           Renan Gouveia
         </span>
 
         <button
           data-target="bx"
-          class="flex items-center gap-1"
+          class="flex items-center gap-1 md:hidden"
           title="Menu mobile toggle"
         >
           <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
           <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
           <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
         </button>
+
+        <div class="hidden md:flex md:items-center md:gap-1" aria-hidden="true">
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+          <div class="w-1.5 h-1.5 bg-main opacity-40 rounded-4xl"></div>
+        </div>
+
+        <ul class="hidden md:flex gap-2">
+          <li>
+            <a
+              class="p-2 text-sm transition-colors hover:opacity-70"
+              href="#About"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-2 text-sm transition-colors hover:opacity-70"
+              href="#Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-2 text-sm transition-colors hover:opacity-70"
+              href="#Projects"
+              >Skills</a
+            >
+          </li>
+        </ul>
       </div>
 
       <div data-target="menuMobile" class="overflow-hidden accordion">
@@ -52,7 +82,7 @@
           <li>
             <a
               class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
-              href="#Projects"
+              href="#Skills"
               >Skills</a
             >
           </li>
@@ -60,65 +90,232 @@
       </div>
     </nav>
 
-    <main class="container mt-28">
-      <div class="flex items-center text-center justify-center gap-2">
-        <h1 class="text-2xl font-semibold">Hello World, I'm Renan</h1>
-        <span class="hidden">
+    <main
+      class="mx-auto mt-28 md:flex md:flex-col md:justify-center md:h-[calc(100vh-11rem)] max-lg:container lg:max-w-[1080px]"
+    >
+      <div class="flex items-center text-center justify-center gap-2 md:mb-2">
+        <h1 class="text-2xl md:text-3xl font-semibold">
+          Hello World, I'm Renan
+        </h1>
+        <span class="hidden md:block">
           <img width="32px" src="/svg/sun.svg" alt="" />
         </span>
       </div>
 
-      <div class="p-2 mt-3">
+      <div class="p-2 mt-3 flex justify-center">
         <img src="/img/main-image.png" alt="Imagem de perfil" />
       </div>
 
-      <h2 class="text-center mt-2">Occupation / <strong class="text-highlight">Front-End Developer</strong></h2>
-      
-      <p class="text-sm text-justify px-4 mt-2 font-ubuntu">
-        Lörem ipsum decins Christian Jonasson krons. Trenaren visöska. Fer begt
-        benera. Josk tetratäsam reakigisk plus nett. Deciren eräsere. Multijirat
-        synat en rev i plafyling. Decilos kad men könskonträr i oröbel, spek.
-        Tovolig tegisk. Fas intraskapet, euns. Kafösade den nya ekonomin, ett
-        geocaching. Decisasock nede pydade, av koldioxidbanta, preheska. Suda
-        polykiras utom pred. Molekylärgastronomi. Helena Johansson eurojiligt
-        och desilig nutede. Biopytt mikrobel såsom primaaktiv.
-      </p>
+      <h2 class="text-center md:text-lg font-semibold mt-2">
+        Occupation / <strong class="text-highlight">Front-End Developer</strong>
+      </h2>
+
+      <div class="px-4 mt-2 flex justify-center">
+        <p
+          class="text-sm text-justify font-ubuntu max-w-[460px] md:max-w-[640px]"
+        >
+          Lörem ipsum decins Christian Jonasson krons. Trenaren visöska. Fer
+          begt benera. Josk tetratäsam reakigisk plus nett. Deciren eräsere.
+          Multijirat synat en rev i plafyling. Decilos kad men könskonträr i
+          oröbel, spek. Tovolig tegisk. Fas intraskapet, euns. Kafösade den nya
+          ekonomin, ett geocaching. Decisasock nede pydade, av koldioxidbanta,
+          preheska. Suda polykiras utom pred. Molekylärgastronomi. Helena
+          Johansson eurojiligt och desilig nutede. Biopytt mikrobel såsom
+          primaaktiv.
+        </p>
+      </div>
     </main>
-    
-    <section>
-      <h2>Projects</h2>
 
-      <div>
-        <div>
-          <img src="/img/spiderman-project.png" alt="" />
-          <button>
-            <img src="/svg/chevron-right.svg" alt="" />
-          </button>
+    <section
+      class="section-container mx-auto max-lg:container lg:max-w-[1080px]"
+    >
+      <h2 class="section-title">Projects</h2>
+
+      <div class="flex flex-col items-center gap-10">
+        <div class="max-w-[425px] md:max-w-5xl">
+          <div class="overflow-hidden rounded-xl max-w-full shadow mb-2">
+            <img
+              class="transform hover:scale-105 transition-transform"
+              src="/img/spiderman-project.png"
+              alt=""
+            />
+          </div>
+          <h4 class="text-xs text-main-dark">
+            HTML / SASS / GSAP / JavasScript
+          </h4>
+          <h3 class="">Spiderman project</h3>
         </div>
-        <h3>Spiderman project</h3>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4 lg:gap-x-8"
+        >
+          <div>
+            <div class="overflow-hidden rounded-xl shadow max-w-full mb-2">
+              <img
+                class="transform hover:scale-105 transition-transform"
+                src="/img/spiderman-project.png"
+                alt=""
+              />
+            </div>
+            <h4 class="text-xs text-main-dark">
+              HTML / SASS / GSAP / JavasScript
+            </h4>
+            <h3 class="">Spiderman project</h3>
+          </div>
+
+          <div>
+            <div class="overflow-hidden rounded-xl shadow max-w-full mb-2">
+              <img
+                class="transform hover:scale-105 transition-transform"
+                src="/img/spiderman-project.png"
+                alt=""
+              />
+            </div>
+            <h4 class="text-xs text-main-dark">
+              HTML / SASS / GSAP / JavasScript
+            </h4>
+            <h3 class="">Spiderman project</h3>
+          </div>
+        </div>
       </div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <div></div>
+
+    <section class="bg-main-white-dark section-margin py-8">
+      <div
+        class="section-container mt-0 mx-auto max-lg:container lg:max-w-[1080px]"
+      >
+        <h2 class="section-title">Skills</h2>
+        <div
+          data-taget="skillsIconsContainer"
+          class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 md:gap-y-14 gap-x-2 gap-y-10 items-center justify-center mt-8"
+        >
+          <img class="skill-icon" src="/svg/tech/html5.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/css.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/git.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/typescript.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/javascript.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/react.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/angular.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/mysql.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/php.svg" alt="" />
+          <img class="skill-icon" src="/svg/tech/sass.svg" alt="" />
+        </div>
+      </div>
     </section>
-    <footer>
-      <h1>Let's talk</h1>
-      <div>
-        <div>
-          <span>Email: ag.renan@hotmail.com</span>
+
+    <section
+      id="trigger-footer"
+      class="section-container mx-auto pb-14 md:pb-24 max-lg:container lg:max-w-[1080px]"
+    >
+      <h2 class="section-title">Professional experience</h2>
+
+      <div class="mt-8 px-1 mx-auto">
+        <div class="flex justify-between items-end md:gap-5">
+          <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
+          <time class="text-main-gray block text-[12px] md:text-sm">
+            03/2021 - 11/2021
+          </time>
         </div>
-        <div>
-          <span>Telefone: 979442646</span>
-        </div>
+
+        <h2 class="text-[12px] md:text-sm text-main-gray">
+          Estágio de programação
+        </h2>
+
+        <h2 class="mb-2 mt-4 text-main-dark font-semibold">Functions</h2>
+        <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              Assisted in the survey of requirements of the processes of the
+              sectors of the company to create UMLs.
+            </p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">I developed prototypes with Figma.</p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              I developed views for the company's ERP built in Laravel.
+            </p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              Participated in the implementation of a Landing Page in
+              partnership with OI with integration with a payments API.
+            </p>
+          </li>
+        </ul>
       </div>
 
-      <div>
-        <div></div>
-        <div>
-          <span> </span>
+      <div class="mt-10 px-1 mx-auto">
+        <div class="flex justify-between items-end md:gap-5">
+          <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
+          <time class="text-main-gray block text-[12px] md:text-sm">
+            03/2021 - 11/2021
+          </time>
         </div>
+
+        <h2 class="text-[12px] md:text-sm text-main-gray">
+          Estágio de programação
+        </h2>
+
+        <h2 class="mb-2 mt-4 text-main-dark font-semibold">Functions</h2>
+        <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              Assisted in the survey of requirements of the processes of the
+              sectors of the company to create UMLs.
+            </p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">I developed prototypes with Figma.</p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              I developed views for the company's ERP built in Laravel.
+            </p>
+          </li>
+          <li class="flex items-start gap-1">
+            <div class="min-w-1 h-1 mt-2 bg-main"></div>
+            <p class="text-sm">
+              Participated in the implementation of a Landing Page in
+              partnership with OI with integration with a payments API.
+            </p>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </section>
+
+    <div class="overflow-hidden">
+      <div id="scroll" class="overflow-hidden perspective-distant">
+        <footer class="px-3 pt-20 pb-2 bg-main-darker">
+          <h1 class="text-5xl text-center text-main-white">Let's talk</h1>
+
+          <div class="flex flex-col px-2 justify-center mt-10 gap-6">
+            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
+              Send me an e-mail
+            </a>
+            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
+              Let's connect - LinkedIn
+            </a>
+            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
+              Let's Collab - Github
+            </a>
+          </div>
+
+          <div class="border-t border-main-white-darker py-4 px-2 mt-20">
+            <p class="text-main-white-darker text-sm text-center">
+              © 2025 Renan Gouveia. All Rights Reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
