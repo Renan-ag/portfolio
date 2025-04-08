@@ -40,13 +40,13 @@
 
 @layer components {
   .navbar {
-    @apply inline-block bg-[#f9f5ecc0] border rounded-4xl border-main-white-darker px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[240px] md:w-[436px] backdrop-blur-sm z-10;
+    @apply inline-block bg-[#f9f5ecc0] border rounded-4xl border-main-white-darker px-4 py-3 fixed top-6 left-1/2 -translate-x-1/2 min-w-[260px] md:w-[436px] backdrop-blur-sm z-10;
   }
 
   .section-container {
     @apply mt-14 container px-3 md:px-6 lg:px-12 md:mt-24;
   }
-
+  
   .section-margin {
     @apply mt-14 md:mt-24;
   }
