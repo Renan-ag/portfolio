@@ -11,6 +11,22 @@
     />
 
     <link href="./src/styles/tailwind.css" rel="stylesheet" />
+
+    <title>☀ Renan Gouveia</title>
+    <meta
+      name="description"
+      content="Portfólio de Renan Gouveia, desenvolvedor front-end com projetos em HTML, SASS, Tailwind e JavaScript."
+    />
+
+    <meta property="og:title" content="Renan Gouveia - Front-End Developer" />
+    <meta
+      property="og:description"
+      content="Veja o portfólio de Renan Gouveia."
+    />
+    <meta property="og:image" content="..." />
+    <meta property="og:url" content="..." />
+    <meta property="og:type" content="website" />
+
     <script type="module" src="src/scripts/app.ts"></script>
   </head>
 
@@ -26,6 +42,8 @@
 
         <button
           data-target="bx"
+          type="button"
+          aria-label="Abrir menu mobile"
           class="flex items-center gap-1 md:hidden p-1 cursor-pointer"
           title="Menu mobile toggle"
         >
@@ -86,7 +104,10 @@
         </div>
       </div>
 
-      <div data-target="menuMobile" class="overflow-hidden block md:hidden accordion">
+      <div
+        data-target="menuMobile"
+        class="overflow-hidden block md:hidden accordion"
+      >
         <ul class="flex flex-col gap-4 pt-4">
           <li>
             <a
@@ -114,22 +135,23 @@
     </nav>
 
     <main
+      id="About"
       class="mx-auto mt-28 md:flex md:flex-col md:justify-center md:h-[calc(100vh-11rem)] max-lg:container lg:max-w-[1080px]"
     >
-      <div class="flex items-center text-center justify-center gap-2 md:mb-2">
+      <div
+        class="flex items-center text-center justify-center gap-2 md:gap-4 md:mb-2"
+      >
         <h1 class="text-2xl md:text-3xl font-semibold">
           Hello World, I'm Renan
         </h1>
-        <span class="hidden md:block">
-          <img width="32px" src="/svg/sun.svg" alt="" />
-        </span>
+        <div class="world-sphere"></div>
       </div>
 
       <div class="p-2 mt-3 flex justify-center">
         <img src="/img/main-image.png" alt="Imagem de perfil" />
       </div>
 
-      <h2 class="text-center md:text-lg font-semibold mt-2">
+      <h2 class="text-center font-semibold mt-2 md:text-lg">
         Occupation / <strong class="text-highlight">Front-End Developer</strong>
       </h2>
 
@@ -150,79 +172,111 @@
     </main>
 
     <section
+      id="Projects"
       class="section-container mx-auto max-lg:container lg:max-w-[1080px]"
     >
       <h2 class="section-title">Projects</h2>
 
       <div class="flex flex-col items-center gap-10">
-        <div class="max-w-[425px] md:max-w-5xl">
-          <div class="overflow-hidden rounded-xl max-w-full shadow mb-2">
+        <article class="block max-w-[425px] md:max-w-5xl">
+          <a
+            href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
+            target="_blank"
+            class="block overflow-hidden rounded-xl max-w-full shadow mb-2"
+          >
             <img
               class="transform hover:scale-105 transition-transform"
-              src="/img/spiderman-project.png"
-              alt=""
+              src="/img/project-1.jpg"
+              alt="Imagem do projeto Homem-Aranha"
             />
-          </div>
-          <h4 class="text-xs text-main-dark">
-            HTML / SASS / GSAP / JavasScript
-          </h4>
-          <h3 class="">Spiderman project</h3>
-        </div>
+          </a>
+          <span class="text-xs text-main-dark block">
+            HTML / SASS / JavasScript / GSAP
+          </span>
+          <a
+            href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
+            target="_blank"
+            class="block transition-opacity hover:opacity-80"
+            >Spiderman project</a
+          >
+        </article>
 
         <div
           class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4 lg:gap-x-8"
         >
-          <div>
-            <div class="overflow-hidden rounded-xl shadow max-w-full mb-2">
+          <article>
+            <a
+              href="https://github.com/Renan-ag/Orcamento-pessoal"
+              target="_blank"
+              class="block overflow-hidden rounded-xl shadow max-w-full mb-2"
+            >
               <img
                 class="transform hover:scale-105 transition-transform"
-                src="/img/spiderman-project.png"
-                alt=""
+                src="/img/project-2.jpg"
+                alt="Imagem do projeto orçamento pessoal"
               />
-            </div>
-            <h4 class="text-xs text-main-dark">
-              HTML / SASS / GSAP / JavasScript
-            </h4>
-            <h3 class="">Spiderman project</h3>
-          </div>
+            </a>
+            <span class="text-xs text-main-dark block">
+              HTML / Bootstrap / JavasScript
+            </span>
+            <a
+              href="https://github.com/Renan-ag/Orcamento-pessoal"
+              target="_blank"
+              class="block transition-opacity hover:opacity-80"
+              >Orçamento pessoal</a
+            >
+          </article>
 
-          <div>
-            <div class="overflow-hidden rounded-xl shadow max-w-full mb-2">
+          <article>
+            <a
+              href="https://github.com/Renan-ag/Brisa"
+              target="_blank"
+              class="overflow-hidden rounded-xl shadow max-w-full mb-2 block"
+            >
               <img
                 class="transform hover:scale-105 transition-transform"
-                src="/img/spiderman-project.png"
+                src="/img/project-3.jpg"
                 alt=""
               />
-            </div>
+            </a>
             <h4 class="text-xs text-main-dark">
-              HTML / SASS / GSAP / JavasScript
+              React / SASS / TypeScript / Vite / Axios
             </h4>
-            <h3 class="">Spiderman project</h3>
-          </div>
+            <a
+              href="https://github.com/Renan-ag/Brisa"
+              target="_blank"
+              class="block transition-opacity hover:opacity-80"
+              >Blog Brisa</a
+            >
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="bg-main-white-dark section-margin py-8">
+    <section id="Skills" class="bg-main-white-dark section-margin py-8">
       <div
         class="section-container mt-0 mx-auto max-lg:container lg:max-w-[1080px]"
       >
         <h2 class="section-title">Skills</h2>
-        <div
+        <ul
           data-taget="skillsIconsContainer"
-          class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 md:gap-y-14 gap-x-2 gap-y-10 items-center justify-center mt-8"
+          class="grid grid-cols-2 sm:grid-cols-5 md:gap-y-14 gap-x-2 gap-y-10 items-center justify-center mt-8"
         >
-          <img class="skill-icon" src="/svg/tech/html5.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/css.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/git.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/typescript.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/javascript.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/react.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/angular.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/mysql.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/php.svg" alt="" />
-          <img class="skill-icon" src="/svg/tech/sass.svg" alt="" />
-        </div>
+          <li><img class="skill-icon" src="/svg/tech/html5.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/css.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/git.svg" alt="" /></li>
+          <li>
+            <img class="skill-icon" src="/svg/tech/typescript.svg" alt="" />
+          </li>
+          <li>
+            <img class="skill-icon" src="/svg/tech/javascript.svg" alt="" />
+          </li>
+          <li><img class="skill-icon" src="/svg/tech/react.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/angular.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/mysql.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/php.svg" alt="" /></li>
+          <li><img class="skill-icon" src="/svg/tech/sass.svg" alt="" /></li>
+        </ul>
       </div>
     </section>
 
@@ -232,7 +286,7 @@
     >
       <h2 class="section-title">Professional experience</h2>
 
-      <div class="mt-8 px-1 mx-auto">
+      <article class="mt-8 px-1 mx-auto">
         <div class="flex justify-between items-end md:gap-5">
           <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
           <time class="text-main-gray block text-[12px] md:text-sm">
@@ -271,9 +325,9 @@
             </p>
           </li>
         </ul>
-      </div>
+      </article>
 
-      <div class="mt-10 px-1 mx-auto">
+      <article class="mt-10 px-1 mx-auto">
         <div class="flex justify-between items-end md:gap-5">
           <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
           <time class="text-main-gray block text-[12px] md:text-sm">
@@ -312,7 +366,7 @@
             </p>
           </li>
         </ul>
-      </div>
+      </article>
     </section>
 
     <div class="overflow-hidden">
@@ -320,17 +374,26 @@
         <footer class="px-3 pt-20 pb-2 bg-main-darker">
           <h1 class="text-5xl text-center text-main-white">Let's talk</h1>
 
-          <div class="flex flex-col px-2 justify-center mt-10 gap-6">
-            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
-              Send me an e-mail
-            </a>
-            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
-              Let's connect - LinkedIn
-            </a>
-            <a class="footer-link" href="mailto:ag.renan@hotmail.com">
-              Let's Collab - Github
-            </a>
-          </div>
+          <ul class="flex flex-col px-2 justify-center mt-10 gap-6">
+            <li>
+              <a class="footer-link" href="mailto:ag.renan@hotmail.com">
+                Send me an e-mail
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/renan-ag/"
+              >
+                Let's connect - LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://github.com/Renan-ag">
+                Let's Collab - Github
+              </a>
+            </li>
+          </ul>
 
           <div class="border-t border-main-white-darker py-4 px-2 mt-20">
             <p class="text-main-white-darker text-sm text-center">
