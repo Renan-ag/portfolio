@@ -10,7 +10,7 @@ i18next
     supportedLngs: ["pt", "en"],
     debug: false,
     interpolation: { escapeValue: false },
-    backend: { loadPath: "/locales/{{lng}}.json" },
+    backend: { loadPath: "./locales/{{lng}}.json" },
   });
 
 export default i18next;
