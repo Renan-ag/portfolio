@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ScrollTrigger.create({
     trigger: "#Jobs",
     start: "bottom bottom",
-    end: "+=800",
+    end: "+=850",
     scrub: true,
     onUpdate: (self) => {
       tl.progress(self.progress);
