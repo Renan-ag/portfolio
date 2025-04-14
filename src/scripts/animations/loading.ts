@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       opacity: 1,
-      bottom: "42%",
+      bottom: "40%",
       pixi: { anchor: 0.5 },
     }
   );
