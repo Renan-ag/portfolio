@@ -2,7 +2,8 @@ import "./animations/animations.ts";
 import i18next from "./i18n.ts";
 
 const ELEMENTS_ID = [
-  "nav-link-about",
+  "nav-link-contact",
+  "nav-link-jobs",
   "nav-link-projects",
   "nav-link-skills",
   "about-title",
