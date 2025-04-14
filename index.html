@@ -31,12 +31,25 @@
   </head>
 
   <body>
+    <div data-loading class="loading">
+      <div
+        data-loading-gradient
+        class="bg-[radial-gradient(circle,rgba(249,245,236,1)_0%,rgba(222,190,115,1)_32%)] w-full h-full absolute z-30 opacity-0"
+      ></div>
+      <img
+        data-loading-icon
+        class="w-40 z-40 absolute"
+        src="/svg/sun.svg"
+        alt=""
+      />
+    </div>
+
     <nav class="navbar">
       <div
         class="flex justify-between items-center gap-10 overflow-hidden transition-all"
       >
         <span class="flex items-center gap-2 text-sm text-nowrap font-semibold">
-          <img class="min-w-6" width="24px" src="/svg/sun.svg" alt="" />
+          <img class="min-w-6" width="24px" src="/svg/sun.svg" alt="Sun icon" />
           Renan Gouveia
         </span>
 
@@ -144,7 +157,7 @@
       <div
         class="flex items-center text-center justify-center gap-2 md:gap-4 md:mb-2"
       >
-        <h1 id="about-title" class="text-2xl md:text-3xl font-semibold">
+        <h1 id="about-title" class="text-2xl md:text-3xl font-medium">
           Hello World, I'm Renan
         </h1>
         <div class="world-sphere"></div>
