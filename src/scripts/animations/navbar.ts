@@ -82,7 +82,7 @@ const setupDesktopAnimations = (
         duration: 0.25,
         ease: "power1",
       });
-      mouseEnterTL.to(navElement, { width: "490px" }, "<");
+      mouseEnterTL.to(navElement, { width: "620px" }, "<");
     }
   };
 

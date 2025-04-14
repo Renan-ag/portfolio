@@ -12,7 +12,7 @@
 
     <link href="./src/styles/tailwind.css" rel="stylesheet" />
 
-    <title>☀ Renan Gouveia</title>
+    <title>Renan Gouveia</title>
     <meta
       name="description"
       content="Portfólio de Renan Gouveia, desenvolvedor front-end com projetos em HTML, SASS, Tailwind e JavaScript."
@@ -23,10 +23,11 @@
       property="og:description"
       content="Veja o portfólio de Renan Gouveia."
     />
-    <meta property="og:image" content="..." />
-    <meta property="og:url" content="..." />
+    <meta property="og:image" content="/img/preview.png" />
+    <meta property="og:url" content="https://renan-ag.com" />
     <meta property="og:type" content="website" />
 
+    <link rel="icon" href="/svg/sun.svg" type="image/svg" />
     <script type="module" src="src/scripts/app.ts"></script>
   </head>
 
@@ -90,16 +91,8 @@
 
           <ul
             data-target="desktop-navLinksContainer"
-            class="hidden md:flex gap-2 max-w-[300px]"
+            class="hidden md:flex gap-2 "
           >
-            <li>
-              <a
-                id="nav-link-about"
-                class="p-2 text-sm transition-colors hover:opacity-70"
-                href="#About"
-                >About</a
-              >
-            </li>
             <li>
               <a
                 id="nav-link-projects"
@@ -112,10 +105,26 @@
               <a
                 id="nav-link-skills"
                 class="p-2 text-sm transition-colors hover:opacity-70"
-                href="#Projects"
+                href="#Skills"
                 >Skills</a
               >
             </li>
+            <li>
+              <a
+                id="nav-link-jobs"
+                class="p-2 text-sm transition-colors hover:opacity-70"
+                href="#Jobs"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                id="nav-link-contact"
+                class="p-2 text-sm transition-colors hover:opacity-70"
+                href="#Contact"
+                >Contact</a
+              >
+            </li>            
           </ul>
         </div>
       </div>
@@ -146,10 +155,23 @@
               >Skills</a
             >
           </li>
+          <li>
+            <a
+              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
+              href="#Jobs"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
+              href="#Contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
-
     <main
       id="About"
       class="mx-auto mt-28 md:flex md:flex-col md:justify-center md:h-[calc(100vh-11rem)] max-lg:container lg:max-w-[1080px]"
@@ -188,7 +210,6 @@
         </p>
       </div>
     </main>
-
     <section
       id="Projects"
       class="section-container mx-auto max-lg:container lg:max-w-[1080px]"
@@ -274,8 +295,7 @@
         </div>
       </div>
     </section>
-
-    <section id="Skills" class="bg-main-white-dark section-margin py-8">
+    <section id="Skills" class="bg-main-white-dark section-margin py-14">
       <div
         class="section-container mt-0 mx-auto max-lg:container lg:max-w-[1080px]"
       >
@@ -359,7 +379,7 @@
     </section>
 
     <section
-      id="trigger-footer"
+      id="Jobs"
       class="section-container mx-auto pb-14 md:pb-24 max-lg:container lg:max-w-[1080px]"
     >
       <h2 id="experience-title" class="section-title">
@@ -509,7 +529,7 @@
       </article>
     </section>
 
-    <div class="overflow-hidden">
+    <div id="Contact" class="overflow-hidden">
       <div id="scroll" class="overflow-hidden perspective-distant">
         <footer class="px-3 pt-20 pb-2 bg-main-darker">
           <h1 id="footer-title" class="text-5xl text-center text-main-white">
