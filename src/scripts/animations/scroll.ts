@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const experiencesSection = document.querySelector("#Jobs");
   
 
-  const tl = gsap.timeline({ paused: true, delay: 3.2 });
+  const tl = gsap.timeline({ paused: true, delay: 4});
 
   tl.fromTo(navbar, { opacity: 0 }, { opacity: 1, ease: "expo.inOut" });
   tl.fromTo(
