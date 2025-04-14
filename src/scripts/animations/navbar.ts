@@ -78,11 +78,11 @@ const setupDesktopAnimations = (
       const mouseEnterTL = gsap.timeline();
       mouseEnterTL.to(desktopCirclesContainer, { opacity: 0, ease: "power1" });
       mouseEnterTL.to(desktopLinks, {
-        maxWidth: "400px",
+        maxWidth: "900px",
         duration: 0.25,
         ease: "power1",
       });
-      mouseEnterTL.to(navElement, { width: "436px" }, "<");
+      mouseEnterTL.to(navElement, { width: "490px" }, "<");
     }
   };
 
