@@ -1,19 +1,13 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+function footerParallax() {
+  const footer = document.getElementById("footer");
+  const websiteContent = document.getElementById("websiteContent");
+
+  websiteContent?.style.setProperty(
+    "margin-bottom",
+    `${(footer?.clientHeight || 0) }px`
+  );
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const footer = document.querySelector("#scroll");
-  const tl = gsap.timeline({ paused: true });
-  tl.from(footer, { translateY: -450 }).to(footer, { translateY: 0, ease: "expo"});
-
-  ScrollTrigger.create({
-    trigger: "#Jobs",
-    start: "bottom bottom",
-    end: "+=800",
-    scrub: true,
-    onUpdate: (self) => {
-      tl.progress(self.progress);
-    },
-  });
+  footerParallax();
 });

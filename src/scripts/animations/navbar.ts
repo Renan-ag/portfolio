@@ -145,7 +145,7 @@ function createBouncingAnimation(
       y: -4,
       opacity: 1,
       duration: 0.2,
-      ease: "power1",
+      ease: "power1"      
     });
 
     tl.to(circle, {
@@ -153,10 +153,11 @@ function createBouncingAnimation(
       opacity: 0.4,
       duration: 0.3,
       delay: 0.3,
-      ease: "power1",
+      ease: "power1"      
     });
   });
 
+  tl.repeatDelay(1.5)
   tl.repeat(-1);
 }
 
