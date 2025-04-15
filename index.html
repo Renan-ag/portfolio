@@ -91,7 +91,7 @@
 
           <ul
             data-target="desktop-navLinksContainer"
-            class="hidden md:flex gap-2 "
+            class="hidden md:flex gap-2"
           >
             <li>
               <a
@@ -124,7 +124,7 @@
                 href="#Contact"
                 >Contact</a
               >
-            </li>            
+            </li>
           </ul>
         </div>
       </div>
@@ -134,13 +134,6 @@
         class="overflow-hidden block md:hidden accordion"
       >
         <ul class="flex flex-col gap-4 pt-4">
-          <li>
-            <a
-              class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
-              href="#About"
-              >About</a
-            >
-          </li>
           <li>
             <a
               class="p-2 text-lg font-semibold transition-colors hover:opacity-70"
@@ -172,407 +165,408 @@
         </ul>
       </div>
     </nav>
-    <main
-      id="About"
-      class="mx-auto mt-28 md:flex md:flex-col md:justify-center md:h-[calc(100vh-11rem)] max-lg:container lg:max-w-[1080px]"
-    >
-      <div
-        class="flex items-center text-center justify-center gap-2 md:gap-4 md:mb-2"
+
+    <div id="websiteContent" class="bg-main-white">
+      <main
+        id="About"
+        class="mx-auto mt-28 md:flex md:flex-col md:justify-center md:h-[calc(100vh-11rem)] max-lg:container lg:max-w-[1080px]"
       >
-        <h1 id="about-title" class="text-2xl md:text-3xl font-medium">
-          Hello World, I'm Renan
-        </h1>
-        <div class="world-sphere"></div>
-      </div>
-
-      <div class="p-2 mt-3 flex justify-center">
-        <img src="/img/main-image.png" alt="Imagem de perfil" />
-      </div>
-
-      <h2 class="text-center font-semibold mt-2 md:text-lg">
-        <span id="about-subtitle"> Occupation /</span>
-        <strong id="about-occupation" class="text-highlight"
-          >Front-End Developer</strong
-        >
-      </h2>
-
-      <div class="px-4 mt-2 flex justify-center">
-        <p
-          class="text-sm leading-6 text-justify font-ubuntu max-w-[460px] md:max-w-[640px]"
-          id="about-description"
-        >
-          Front-End Developer specialized in React and TypeScript, with
-          experience in Laravel and Node.js. I participated in migrating an ERP
-          to a modern architecture, designing interfaces in Figma and
-          integrating APIs (Google Maps, Pagar.me). Proficient in UI/UX, SEO,
-          and agile methodologies. Focused on performance, clean code, and
-          user-centered solutions.
-        </p>
-      </div>
-    </main>
-    <section
-      id="Projects"
-      class="section-container mx-auto max-lg:container lg:max-w-[1080px]"
-    >
-      <h2 id="project-title" class="section-title">Projects</h2>
-
-      <div class="flex flex-col items-center gap-10">
-        <article class="block max-w-[425px] md:max-w-5xl">
-          <a
-            href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
-            target="_blank"
-            class="block overflow-hidden rounded-xl max-w-full shadow-lg mb-2"
-          >
-            <img
-              class="transform hover:scale-105 transition-transform"
-              src="/img/project-1.jpg"
-              alt="Imagem do projeto Homem-Aranha"
-            />
-          </a>
-
-          <span class="text-xs text-main-dark block mt-3">
-            HTML / SASS / JavasScript / GSAP
-          </span>
-          <a
-            id="project-spiderman"
-            href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
-            target="_blank"
-            class="block transition-opacity hover:opacity-80"
-            >Spiderman project</a
-          >
-        </article>
-
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4 lg:gap-x-8"
+          class="flex items-center text-center justify-center gap-2 md:gap-4 md:mb-2"
         >
-          <article>
-            <a
-              href="https://github.com/Renan-ag/Orcamento-pessoal"
-              target="_blank"
-              class="block overflow-hidden rounded-xl shadow-lg max-w-full mb-2"
-            >
-              <img
-                class="transform hover:scale-105 transition-transform"
-                src="/img/project-2.jpg"
-                alt="Imagem do projeto orçamento pessoal"
-              />
-            </a>
-            <span class="text-xs text-main-dark block mt-3">
-              HTML / Bootstrap / JavasScript
-            </span>
-            <a
-              id="project-personal-budget"
-              href="https://github.com/Renan-ag/Orcamento-pessoal"
-              target="_blank"
-              class="block transition-opacity hover:opacity-80"
-              >Personal budget</a
-            >
-          </article>
-
-          <article>
-            <a
-              href="https://github.com/Renan-ag/Brisa"
-              target="_blank"
-              class="overflow-hidden rounded-xl shadow-lg max-w-full mb-2 block"
-            >
-              <img
-                class="transform hover:scale-105 transition-transform"
-                src="/img/project-3.jpg"
-                alt=""
-              />
-            </a>
-            <span class="text-xs text-main-dark block mt-3">
-              React / SASS / TypeScript / Vite / Axios
-            </span>
-            <a
-              id="project-blog"
-              href="https://github.com/Renan-ag/Brisa"
-              target="_blank"
-              class="block transition-opacity hover:opacity-80"
-              >Blog Brisa</a
-            >
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="Skills" class="bg-main-white-dark section-margin py-14">
-      <div
-        class="section-container mt-0 mx-auto max-lg:container lg:max-w-[1080px]"
-      >
-        <h2 id="skill-title" class="section-title">Skills</h2>
-        <ul
-          data-taget="skillsIconsContainer"
-          class="grid grid-cols-2 sm:grid-cols-5 md:gap-y-14 gap-x-2 gap-y-10 items-center justify-center mt-8"
-        >
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/html5.svg"
-              alt="HTML5 Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/css.svg"
-              alt="CSS Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/git.svg"
-              alt="Git Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/typescript.svg"
-              alt="TypeScriptd Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/javascript.svg"
-              alt="JavaScript Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/react.svg"
-              alt="React Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/angular.svg"
-              alt="Angular Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/mysql.svg"
-              alt="MySQL Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/php.svg"
-              alt="PHP Brand Icon"
-            />
-          </li>
-          <li>
-            <img
-              class="skill-icon"
-              src="/svg/tech/sass.svg"
-              alt="SASS Brand Icon"
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section
-      id="Jobs"
-      class="section-container mx-auto pb-14 md:pb-24 max-lg:container lg:max-w-[1080px]"
-    >
-      <h2 id="experience-title" class="section-title">
-        Professional experience
-      </h2>
-
-      <article class="mt-8 px-1 mx-auto">
-        <div class="flex justify-between items-end md:gap-5">
-          <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
-          <time class="text-main-gray block text-[12px] md:text-sm">
-            03/2021 - 11/2021
-          </time>
-        </div>
-
-        <h2
-          id="experience-1-occupation"
-          class="text-[12px] md:text-sm text-main-gray"
-        >
-          Estágio de programação
-        </h2>
-
-        <h2
-          id="experience-1-functions-title"
-          class="mb-2 mt-4 text-main-dark font-semibold"
-        >
-          Functions
-        </h2>
-        <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-1-case-1" class="text-sm">
-              Assisted in the survey of requirements of the processes of the
-              sectors of the company to create UMLs.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-1-case-2" class="text-sm">
-              I developed prototypes with Figma.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-1-case-3" class="text-sm">
-              I developed views for the company's ERP built in Laravel.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-1-case-4" class="text-sm">
-              Participated in the implementation of a Landing Page in
-              partnership with OI with integration with a payments API.
-            </p>
-          </li>
-        </ul>
-      </article>
-
-      <article class="mt-10 px-1 mx-auto">
-        <div class="flex justify-between items-end md:gap-5">
-          <h1 class="text-main-dark font-semibold">Ez Ez</h1>
-          <time class="text-main-gray block text-[12px] md:text-sm">
-            05/2022 - 01/2025
-          </time>
-        </div>
-
-        <h2
-          id="experience-2-occupation"
-          class="text-[12px] md:text-sm text-main-gray"
-        >
-          Front-End Developer
-        </h2>
-
-        <h2
-          id="experience-2-functions-title"
-          class="mb-2 mt-4 text-main-dark font-semibold"
-        >
-          Responsibilities
-        </h2>
-        <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-1" class="text-sm">
-              Performed regular maintenance on the company's internal ERP
-              system, developed in Laravel.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-2" class="text-sm">
-              Developed and implemented new features and modules in the
-              Laravel-based ERP.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-3" class="text-sm">
-              Led the transition from Laravel views to a standalone React
-              application, decoupling the front-end.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-4" class="text-sm">
-              Coordinated the migration from the legacy Laravel system to a more
-              efficient API structure.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-5" class="text-sm">
-              Built a React application for delivery and pickup routing,
-              integrated with the Google Maps API.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-6" class="text-sm">
-              Fixed bugs and improved visuals on an e-commerce site built on
-              Shopify.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-7" class="text-sm">
-              Created a drinking game using React.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-8" class="text-sm">
-              Collaborated on layout design using Figma.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-9" class="text-sm">
-              Performed code testing and debugging.
-            </p>
-          </li>
-          <li class="flex items-start gap-1">
-            <div class="min-w-1 h-1 mt-2 bg-main"></div>
-            <p id="experience-2-case-10" class="text-sm">
-              Proposed solutions to improve existing processes.
-            </p>
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <div id="Contact" class="overflow-hidden">
-      <div id="scroll" class="overflow-hidden perspective-distant">
-        <footer class="px-3 pt-20 pb-2 bg-main-darker">
-          <h1 id="footer-title" class="text-5xl text-center text-main-white">
-            Let's talk
+          <h1 id="about-title" class="text-2xl md:text-3xl font-medium">
+            Hello World, I'm Renan
           </h1>
+          <div class="world-sphere"></div>
+        </div>
 
-          <ul class="flex flex-col px-2 justify-center mt-10 gap-6">
-            <li class="flex justify-center">
+        <div class="px-5 py-2 md:p-2 mt-3 flex justify-center">
+          <img src="/img/main-image.png" alt="Imagem de perfil" />
+        </div>
+
+        <h2 class="text-center font-semibold mt-2 md:text-lg">
+          <span id="about-subtitle"> Occupation /</span>
+          <strong id="about-occupation" class="text-highlight"
+            >Front-End Developer</strong
+          >
+        </h2>
+
+        <div class="px-4 mt-2 flex justify-center">
+          <p
+            class="text-sm leading-6 text-justify font-ubuntu max-w-[460px] md:max-w-[640px]"
+            id="about-description"
+          >
+            Front-End Developer specialized in React and TypeScript, with
+            experience in Laravel and Node.js. I participated in migrating an
+            ERP to a modern architecture, designing interfaces in Figma and
+            integrating APIs (Google Maps, Pagar.me). Proficient in UI/UX, SEO,
+            and agile methodologies. Focused on performance, clean code, and
+            user-centered solutions.
+          </p>
+        </div>
+      </main>
+
+      <section
+        id="Projects"
+        class="section-container mx-auto max-lg:container lg:max-w-[1080px]"
+      >
+        <h2 id="project-title" class="section-title">Projects</h2>
+
+        <div class="flex flex-col items-center gap-10">
+          <article class="block max-w-[425px] md:max-w-5xl">
+            <a
+              href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
+              target="_blank"
+              class="block overflow-hidden rounded-xl max-w-full shadow-lg mb-2"
+            >
+              <img
+                class="transform scale-110 hover:scale-[115%] transition-transform"
+                src="/img/project-1.jpg"
+                alt="Project spiderman image"
+              />
+            </a>
+
+            <span class="text-xs text-main-dark block mt-3">
+              HTML / SASS / JavasScript / GSAP
+            </span>
+            <a
+              id="project-spiderman"
+              href="https://github.com/Renan-ag/Spiderman-Page-FrontWeek"
+              target="_blank"
+              class="block transition-opacity hover:opacity-80"
+              >Spiderman project</a
+            >
+          </article>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4 lg:gap-x-8"
+          >
+            <article>
               <a
-                id="footer-email"
-                class="footer-link"
-                href="mailto:ag.renan@hotmail.com"
+                href="https://github.com/Renan-ag/Orcamento-pessoal"
+                target="_blank"
+                class="block overflow-hidden rounded-xl shadow-lg max-w-full mb-2"
               >
-                Send me an e-mail
+                <img
+                  class="transform scale-110 hover:scale-[115%] transition-transform"
+                  src="/img/project-2.jpg"
+                  alt="Project personal budget image"
+                />
               </a>
+              <span class="text-xs text-main-dark block mt-3">
+                HTML / Bootstrap / JavasScript
+              </span>
+              <a
+                id="project-personal-budget"
+                href="https://github.com/Renan-ag/Orcamento-pessoal"
+                target="_blank"
+                class="block transition-opacity hover:opacity-80"
+                >Personal budget</a
+              >
+            </article>
+
+            <article>
+              <a
+                href="https://github.com/Renan-ag/Brisa"
+                target="_blank"
+                class="overflow-hidden rounded-xl shadow-lg max-w-full mb-2 block"
+              >
+                <img
+                  class="transform scale-110 hover:scale-[115%] transition-transform"
+                  src="/img/project-3.jpg"
+                  alt="Project blog brisa image"
+                />
+              </a>
+              <span class="text-xs text-main-dark block mt-3">
+                React / SASS / TypeScript / Vite / Axios
+              </span>
+              <a
+                id="project-blog"
+                href="https://github.com/Renan-ag/Brisa"
+                target="_blank"
+                class="block transition-opacity hover:opacity-80"
+                >Blog Brisa</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills" class="bg-main-white-dark section-margin py-14">
+        <div
+          class="section-container mt-0 mx-auto max-lg:container lg:max-w-[1080px]"
+        >
+          <h2 id="skill-title" class="section-title">Skills</h2>
+          <ul
+            data-taget="skillsIconsContainer"
+            class="grid grid-cols-2 sm:grid-cols-5 md:gap-y-14 gap-x-2 gap-y-10 items-center justify-center mt-8"
+          >
+            <li tooltip="HTML 5" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/html5.svg"
+                alt="HTML5 Brand Icon"
+              />
             </li>
-            <li class="flex justify-center">
-              <a
-                id="footer-linkedin"
-                class="footer-link"
-                href="https://www.linkedin.com/in/renan-ag/"
-              >
-                Let's connect - LinkedIn
-              </a>
+            <li tooltip="CSS" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/css.svg"
+                alt="CSS Brand Icon"
+              />
             </li>
-            <li class="flex justify-center">
-              <a
-                id="footer-github"
-                class="footer-link"
-                href="https://github.com/Renan-ag"
-              >
-                Let's Collab - Github
-              </a>
+            <li tooltip="GIT" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/git.svg"
+                alt="Git Brand Icon"
+              />
+            </li>
+            <li tooltip="TypeScript" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/typescript.svg"
+                alt="TypeScriptd Brand Icon"
+              />
+            </li>
+            <li tooltip="JavaScript" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/javascript.svg"
+                alt="JavaScript Brand Icon"
+              />
+            </li>
+            <li tooltip="React" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/react.svg"
+                alt="React Brand Icon"
+              />
+            </li>
+            <li tooltip="Angular" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/angular.svg"
+                alt="Angular Brand Icon"
+              />
+            </li>
+            <li tooltip="MySQL" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/mysql.svg"
+                alt="MySQL Brand Icon"
+              />
+            </li>
+            <li tooltip="PHP" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/php.svg"
+                alt="PHP Brand Icon"
+              />
+            </li>
+            <li tooltip="SASS" tooltip-position="top">
+              <img
+                class="skill-icon"
+                src="/svg/tech/sass.svg"
+                alt="SASS Brand Icon"
+              />
             </li>
           </ul>
+        </div>
+      </section>
 
-          <div class="border-t border-main-white-darker py-4 px-2 mt-20">
-            <p class="text-main-white-darker text-sm text-center">
-              © 2025 Renan Gouveia. All Rights Reserved.
-            </p>
+      <section
+        id="Jobs"
+        class="section-container mx-auto pb-14 md:pb-24 max-lg:container lg:max-w-[1080px]"
+      >
+        <h2 id="experience-title" class="section-title">
+          Professional experience
+        </h2>
+
+        <article class="px-1 mx-auto">
+          <div class="flex justify-between items-end md:gap-5">
+            <h1 class="text-main-dark font-semibold">Russel Serviços</h1>
+            <time class="text-main-gray block text-[12px] md:text-sm">
+              03/2021 - 11/2021
+            </time>
           </div>
-        </footer>
-      </div>
+
+          <h2
+            id="experience-1-occupation"
+            class="text-[12px] md:text-sm text-main-gray"
+          >
+            Estágio de programação
+          </h2>
+
+          <h2
+            id="experience-1-functions-title"
+            class="mb-2 mt-4 text-main-dark font-semibold"
+          >
+            Functions
+          </h2>
+          <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-1-case-1" class="text-sm">
+                Assisted in the survey of requirements of the processes of the
+                sectors of the company to create UMLs.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-1-case-2" class="text-sm">
+                I developed prototypes with Figma.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-1-case-3" class="text-sm">
+                I developed views for the company's ERP built in Laravel.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-1-case-4" class="text-sm">
+                Participated in the implementation of a Landing Page in
+                partnership with OI with integration with a payments API.
+              </p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="mt-10 px-1 mx-auto">
+          <div class="flex justify-between items-end md:gap-5">
+            <h1 class="text-main-dark font-semibold">Ez Ez</h1>
+            <time class="text-main-gray block text-[12px] md:text-sm">
+              05/2022 - 01/2025
+            </time>
+          </div>
+
+          <h2
+            id="experience-2-occupation"
+            class="text-[12px] md:text-sm text-main-gray"
+          >
+            Front-End Developer
+          </h2>
+
+          <h2
+            id="experience-2-functions-title"
+            class="mb-2 mt-4 text-main-dark font-semibold"
+          >
+            Responsibilities
+          </h2>
+          <ul class="px-2 flex flex-col gap-4 md:max-w-[640px]">
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-1" class="text-sm">
+                Performed regular maintenance on the company's internal ERP
+                system, developed in Laravel.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-2" class="text-sm">
+                Developed and implemented new features and modules in the
+                Laravel-based ERP.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-3" class="text-sm">
+                Led the transition from Laravel views to a standalone React
+                application, decoupling the front-end.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-4" class="text-sm">
+                Coordinated the migration from the legacy Laravel system to a
+                more efficient API structure.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-5" class="text-sm">
+                Built a React application for delivery and pickup routing,
+                integrated with the Google Maps API.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-6" class="text-sm">
+                Fixed bugs and improved visuals on an e-commerce site built on
+                Shopify.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-7" class="text-sm">
+                Created a drinking game using React.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-8" class="text-sm">
+                Collaborated on layout design using Figma.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-9" class="text-sm">
+                Performed code testing and debugging.
+              </p>
+            </li>
+            <li class="flex items-start gap-1">
+              <div class="min-w-1 h-1 mt-2 bg-main"></div>
+              <p id="experience-2-case-10" class="text-sm">
+                Proposed solutions to improve existing processes.
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
     </div>
+
+    <footer id="footer" class="px-3 pt-20 pb-2 bg-main-darker w-full fixed bottom-0 left-0 -z-10">
+      <h1 id="footer-title" class="text-4xl md:text-5xl text-center text-main-white">
+        Let's talk
+      </h1>
+
+      <ul class="flex flex-col px-2 justify-center mt-10 gap-6">
+        <li class="flex justify-center">
+          <a
+            id="footer-email"
+            class="footer-link"
+            href="mailto:ag.renan@hotmail.com"
+          >
+            Send me an e-mail
+          </a>
+        </li>
+        <li class="flex justify-center">
+          <a
+            id="footer-linkedin"
+            class="footer-link"
+            href="https://www.linkedin.com/in/renan-ag/"
+          >
+            Let's connect - LinkedIn
+          </a>
+        </li>
+        <li class="flex justify-center">
+          <a
+            id="footer-github"
+            class="footer-link"
+            href="https://github.com/Renan-ag"
+          >
+            Let's Collab - Github
+          </a>
+        </li>
+      </ul>
+
+      <div class="border-t border-main-white-darker py-4 px-2 mt-20">
+        <p class="text-main-white-darker text-sm text-center">
+          © 2025 Renan Gouveia. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.fromTo(skillsSection, {opacity:0}, {
     scrollTrigger: {
       trigger: skillsSection,
-      start: "top 80%",
+      start: "top 90%",
       toggleActions: "play none none none"
     },
     opacity: 1,
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.fromTo(experiencesSection, {opacity:0, y: 100}, {
     scrollTrigger: {
       trigger: experiencesSection,
-      start: "top 70%",
+      start: "top 80%",
       toggleActions: "play none none none"
     },
     opacity: 1,
