@@ -45,6 +45,28 @@
       background-position: 10rem 0px;
     }
   }
+
+  [tooltip] {
+    @apply relative  inline-block before:content-[""] before:absolute before:-top-1.5 before:left-1/2 before:transition-opacity
+    before:-translate-x-1/2 before:border-t-4 before:border-r-[6px] before:border-b-0 before:border-l-[6px]
+    before:border-t-main-dark before:border-b-transparent before:border-r-transparent before:border-l-transparent 
+    before:z-50 before:opacity-0 after:content-[attr(tooltip)] after:absolute after:left-1/2 after:-top-1.5 
+    after:-translate-x-1/2 after:-translate-y-full after:bg-main-dark after:text-center after:text-main-white after:transition-opacity
+    after:py-1 after:px-2 after:font-medium after:text-sm after:min-w-20 after:rounded-sm after:pointer-events-none after:z-50 after:opacity-0;
+  }
+
+  [tooltip-position="top"]::before {
+    @apply left-1/2;
+  }
+
+  [tooltip-position="top"]::after {
+    @apply left-1/2;
+  }
+
+  [tooltip]:hover::after,
+  [tooltip]:hover::before {
+    @apply opacity-100;
+  }
 }
 
 @layer components {
@@ -61,7 +83,7 @@
   }
 
   .section-title {
-    @apply text-xl font-medium text-center mb-4 md:mb-6 md:text-left md:text-2xl;
+    @apply text-xl font-medium text-center md:text-left mb-8;
   }
 
   .text-link {

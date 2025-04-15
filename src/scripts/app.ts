@@ -7,6 +7,7 @@ const ELEMENTS_ID = [
   "nav-link-mobile-projects",
   "nav-link-mobile-skills",
   "nav-link-mobile-contact",
+  "nav-link-contact",  
   "nav-link-jobs",
   "nav-link-projects",
   "nav-link-skills",
