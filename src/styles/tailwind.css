@@ -19,6 +19,7 @@
 @layer base {
   body {
     font-family: "Sora", sans-serif;
+    scroll-behavior: smooth;
     @apply bg-main-white w-full text-main-darker;
   }
 }
