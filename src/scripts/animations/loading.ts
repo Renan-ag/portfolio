@@ -1,10 +1,14 @@
 import gsap from "gsap";
 
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.set("body", { overflow: "hidden" });
+
   const tl = gsap.timeline({ paused: true });
   const loadingContainer = document.querySelector("[data-loading]");
   const gradient = document.querySelector("[data-loading-gradient]");
   const icon = document.querySelector("[data-loading-icon]");
+
+  
 
   tl.fromTo(
     icon,
@@ -16,8 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       opacity: 1,
-      bottom: "40%",
-      pixi: { anchor: 0.5 },
+      bottom: "40%"      
     }
   );
 
@@ -48,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       opacity: 0,
       onComplete: () => {
         gsap.set(loadingContainer, { pointerEvents: "none" });
+        gsap.set("body", { overflow: "auto" });
       },
     });
   });
