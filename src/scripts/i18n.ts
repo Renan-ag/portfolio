@@ -6,7 +6,8 @@ i18next
   .use(Backend)
   .use(LanguageDetector)
   .init({
-    fallbackLng: "pt",
+    fallbackLng: "en",
+    cleanCode: true,
     supportedLngs: ["pt", "en"],
     debug: false,
     interpolation: { escapeValue: false },
